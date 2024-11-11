@@ -86,6 +86,8 @@ export default function App() {
         "datum":datum,
         "kesz":0
       })
+
+      uj.sort((a, b) => new Date(a.datum) - new Date(b.datum));
       setAdatTomb(uj)
       storeData(uj)
       alert("Sikeres felvitel!")
